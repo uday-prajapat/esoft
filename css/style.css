@@ -850,7 +850,7 @@ padding: 30px 30px 0 0;
 
 .technology-text ul li:hover {
     background: #F9B508;
-    border: 2px solid #F9B508;
+    border-color:#F9B508;
 }
 
 .need {
@@ -1577,9 +1577,12 @@ line-height: 30px;
         width: 25px;
         display: block;
     }
-  
+    .menu{
+
+        display: none ;
+    }
     .menu ul {
-        display: none;
+  
         background: #f8f8f8;
         z-index: 99999;
         height: 100%;
@@ -1590,6 +1593,7 @@ line-height: 30px;
         top: 0;
         flex-direction: column;
         align-items: start;
+       
     }
     
 .menu ul li{
@@ -1599,6 +1603,14 @@ line-height: 30px;
     }
     .menu ul li a{
         color: #000;
+    }
+
+
+    .slider-background {
+        height:auto;
+    }
+    .slider-text{
+        padding: 100px 0;
     }
     .slider-text h1 {
         font-size: 35px;
@@ -1652,14 +1664,16 @@ line-height: 30px;
 }
 .company-text {
     width: 100%;
+    flex-direction: column;
 }
 .company-text h2 {
     font-size: 25px;
+    width: 47%;
     line-height: 35px;
-width: 55%;
 }
 .company-text>p {
     font-size: 17px;
+    width: 100%;
 }
 .company ul{
     flex-direction: column;
@@ -1692,6 +1706,7 @@ width: 55%;
 .provide{
     flex-direction: column;
 justify-content: start;
+align-items: start;
 }
 .provide-course ul{
     flex-direction: column;
@@ -1745,8 +1760,7 @@ background: #000;
     flex-direction: column;
 }
 .stuidies ul li{
-    width: 100%;
-    margin: 30px 0 0 0;
+    margin: 30px 0 ;
 }
 .stuidies ul li:first-child{
     margin: 0;
@@ -1758,7 +1772,9 @@ background: #000;
     padding: 50px 0;
   flex-direction: column;
 }
-
+.client-text .client-technology{
+    width: 100%;
+}
 
 .client-technology span{
     font-size: 15px;
@@ -1774,13 +1790,16 @@ background: #000;
 .client-img img{
     width: 250px;
 }
+.client-icon{
+    width: 100%;
+}
 .client-icon ul{
-    flex-direction: column;
-    justify-content: center;
+   flex-wrap: wrap;
+   justify-content: space-between;
 }
 .client-icon ul li {
-    width: 100%;
-    padding-top: 50px;
+    width: 50%;
+    padding: 50px 0 0 0;
     border-right: 0;
     border-bottom:0;
   
@@ -1815,6 +1834,7 @@ background: #000;
 }
 .blog{
     padding-top:50px ;
+    align-items: start;
     flex-direction: column;
 }
 .blog-text span{
@@ -1844,9 +1864,18 @@ background: #000;
 }
 .newsletter-background{
     margin-top: 50px;
+    padding: 10px;
 }
 .newsletter{
     flex-direction: column;
+    align-items: start;
+}
+.newsletter-btn{
+
+    margin-top: 20px;
+}
+.newsletter-btn input{
+    width: 350px;
 }
 .newsletter-text h2 {
     font-size: 25px;
