@@ -204,8 +204,7 @@
 }
 .slick-dots li.slick-active{
     background: #ffbb00;
-    height: 15px;
-    width: 15px;
+ 
 }
 .slick-dots li.slick-active button:before
 {

@@ -357,7 +357,7 @@
                     </div>
                     <div class="company-img">
                         <div class="company-icon">
-                            <img class="company-white-icon" src="./image/company-hover-icon1.jpg" alt="company-icon">
+                            <img class="company-white-icon" src="./image/company-hover-icon1.png" alt="company-icon">
                             <img class="company-yellow-icon" src="./image/company-icon1.png" alt="company-icon">
                         </div>
 
@@ -387,7 +387,7 @@
                     </div>
                     <div class="company-img">
                         <div class="company-icon">
-                            <img class="company-white-icon" src="./image/company-hover-icon2.jpg" alt="company-icon">
+                            <img class="company-white-icon" src="./image/company-hover-icon2.png" alt="company-icon">
                             <img class="company-yellow-icon" src="./image/company-icon2.png" alt="company-icon">
                         </div>
 
@@ -419,7 +419,7 @@
                     <div class="company-img">
                         <div class="company-icon">
                             <img class="company-white-icon" src="./image/company-hover-icon3.png" alt="company-icon">
-                            <img class="company-yellow-icon" src="./image/company-icon3.jpg" alt="company-icon">
+                            <img class="company-yellow-icon" src="./image/company-icon3.png" alt="company-icon">
                         </div>
 
                         <div class="company-counting">
@@ -448,7 +448,7 @@
                     </div>
                     <div class="company-img">
                         <div class="company-icon">
-                            <img class="company-white-icon" src="./image/company-hover-icon4.jpg" alt="company-icon">
+                            <img class="company-white-icon" src="./image/company-hover-icon4.png" alt="company-icon">
                             <img class="company-yellow-icon" src="./image/company-icon4.png" alt="company-icon">
                         </div>
 
@@ -483,25 +483,25 @@
         <div class="project-rank">
             <ul>
                 <li>
-                    <h3>
+                    <h3 class="counter" data-target="13">
                         13 <span> K+</span>
                     </h3>
                     <p>Our Clients Base</p>
                 </li>
                 <li>
-                    <h3>
+                    <h3 class="counter" data-target="9">
                         9 <span> K+</span>
                     </h3>
                     <p>Project Finished</p>
                 </li>
                 <li>
-                    <h3>
+                    <h3 class="counter" data-target="450">
                         450 <span> +</span>
                     </h3>
                     <p>Talented Works</p>
                 </li>
                 <li>
-                    <h3>
+                    <h3 class="counter" data-target="92">
                         92 <span> K+</span>
                     </h3>
                     <p>Award Wining</p>
@@ -1364,6 +1364,7 @@
             // prevArrow: '<div class="prev-arrow"><img src=./image/prev-img.png></div>',
             // nextArrow: '<div class="next-arrow"><img src=./image/next-img.png></div>',
             dots: false,
+            arrows:false,
             infprevArrowinite: false,
             speed: 500,
             slidesToShow: 3,
@@ -1418,7 +1419,25 @@
         });
 
 
+
+        const counters = document.querySelectorAll(".counter");
+
+counters.forEach((counter) => {
+  counter.innerText = "0";
+  const updateCounter = () => {
+    const target = +counter.getAttribute("data-target");
+    const count = +counter.innerText;
+    const increment = target /1000;
+    if (count < target) {
+      counter.innerText = `${Math.ceil(count + increment)}`;
+      setTimeout(updateCounter, 1);
+    } else counter.innerText = target;
+  };
+  updateCounter();
+});
+
+
     </script>
 </body>
 
-</html>
+</html> 

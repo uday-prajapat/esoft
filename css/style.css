@@ -565,12 +565,14 @@ color: #ffcd44;
 .company-icon{
     padding: 70px 0 0 60px;
 }
-.compan-icon img{
-    display: block;
+.company ul li .company-icon .company-white-icon {
+display: none;
 }
-.company-white-icon {
-    display: none;
-}
+.company ul li .company-icon img{
+display: block;
+    width: 50px;
+    }
+
 
 .secuirity {
     text-align: center;
@@ -1334,7 +1336,8 @@ padding-bottom: 10px;
 }
 
 .human img {
-    width: 30px;
+    width: 27px;
+    height: 20px;
     padding-right: 10px;
 }
 .human{
