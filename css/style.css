@@ -1576,6 +1576,9 @@ line-height: 30px;
         display: block;
         
     }
+    .fixed-header{
+        display: none;
+    }
     .hamburger img{
         width: 25px;
         display: block;
@@ -1898,13 +1901,16 @@ background: #000;
 .important-links{
     margin-top: 50px;
 }
-.copy-right{
+.copy{
     flex-direction: column;
     margin: auto;
+    align-items: start;
 }
 .our-contact{
     margin-top: 50px;
 }
-
+.about ul li:first-child a{
+padding-left: 0;
+}
 
 }
