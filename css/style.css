@@ -203,6 +203,7 @@ transition: transform .4s, opacity .1s;
     position: relative;
     left: 0;
     top: 50%;
+    width: 60%;
 }
 
 
@@ -211,17 +212,122 @@ transition: transform .4s, opacity .1s;
     font-size: 20px;
 }
 
-.slider-text h1 {
+/* .slider-text h1 {
     font-size: 66px;
     width: 70%;
     line-height: 60px;
     padding: 10px 0;
-    font-family: 'Rajdhani', sans-serif;
+
+} */
+.slider-text h1{
+    padding: 20px 0 10px;
+    width: 90%;
 }
+
+.animate .animatiom {
+	font-size: 60px;
+    color: #fff;
+    font-family: 'Rajdhani', sans-serif;
+    line-height: 60px
+}
+
+.animate span {
+	display: inline-block;
+}
+
+
+.animate span:nth-of-type(2) {
+	animation-delay: .05s;
+}
+.animate span:nth-of-type(3) {
+	animation-delay: .1s;
+}
+.animate span:nth-of-type(4) {
+	animation-delay: .15s;
+}
+.animate span:nth-of-type(5) {
+	animation-delay: .2s;
+}
+.animate span:nth-of-type(6) {
+	animation-delay: .25s;
+}
+.animate span:nth-of-type(7) {
+	animation-delay: .3s;
+}
+.animate span:nth-of-type(8) {
+	animation-delay: .35s;
+}
+.animate span:nth-of-type(9) {
+	animation-delay: .4s;
+}
+.animate span:nth-of-type(10) {
+	animation-delay: .45s;
+}
+.animate span:nth-of-type(11) {
+	animation-delay: .5s;
+}
+.animate span:nth-of-type(12) {
+	animation-delay: .55s;
+}
+.animate span:nth-of-type(13) {
+	animation-delay: .6s;
+}
+.animate span:nth-of-type(14) {
+	animation-delay: .65s;
+}
+.animate span:nth-of-type(15) {
+	animation-delay: .7s;
+}
+.animate span:nth-of-type(16) {
+	animation-delay: .75s;
+}
+.animate span:nth-of-type(17) {
+	animation-delay: .8s;
+}
+.animate span:nth-of-type(18) {
+	animation-delay: .85s;
+}
+.animate span:nth-of-type(19) {
+	animation-delay: .9s;
+}
+.animate span:nth-of-type(20) {
+	animation-delay: .95s;
+}
+.animate span:nth-of-type(21) {
+	animation-delay: .99s;
+}
+
+
+
+
+/* Animation Six */
+
+
+.six span {
+	color: #000;
+	opacity: 0;
+	transform: rotate(-180deg) translate(150px, 0);
+	animation: twister .5s forwards;
+}
+
+
+@keyframes twister {
+	10% {
+		opacity: 1;
+	}
+	100% {
+		transform: rotate(0deg) translate(0);
+		opacity: 1;
+	}
+}
+
+
+
+
 
 .slider-text p {
     font-size: 18px;
-    width: 70%;
+    width: 80%;
     line-height: 30px;
 }
 
