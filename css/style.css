@@ -28,6 +28,11 @@ a {
     margin: auto;
 }
 
+
+
+
+
+
 .top-header-background {
     background: #232434;
     padding: 10px 0;
@@ -221,7 +226,7 @@ transition: transform .4s, opacity .1s;
 } */
 .slider-text h1{
     padding: 20px 0 10px;
-    width: 90%;
+    width: 80%;
 }
 
 .animate .animatiom {
@@ -306,7 +311,7 @@ transition: transform .4s, opacity .1s;
 .six span {
 	color: #000;
 	opacity: 0;
-	transform: rotate(-180deg) translate(150px, 0);
+	transform: rotate(-90deg) translate(150px, 0);
 	animation: twister .5s forwards;
 }
 
@@ -1797,15 +1802,19 @@ line-height: 30px;
         height:auto;
     }
     .slider-text{
-        padding: 100px 0;
+        padding: 50px 0;
+        width: 100%;
     }
     .slider-text h1 {
-        font-size: 35px;
-        width: 66%;
+        width: 100%;
         line-height: 43px;
     }
+    .animate .animatiom{
+        font-size: 40px ;
+        line-height: 30px;
+    }
     .slider-text p {
-        width: 89%;
+        width: 100%;
         line-height: 25px;
     }
     .slider-right-img {
@@ -1922,6 +1931,10 @@ align-items: start;
     border: 2px solid #fff;
 background: #000;
     margin: 10px;
+}
+.waves{
+    left: 130px;
+    top: -15px;
 }
 .need{
     margin-top: 50px;
@@ -2047,7 +2060,7 @@ background: #000;
     font-size: 20px;
 }
 .blog-date{
-    width: 65%;
+    width: 50%;
 }
 .newsletter-background{
     margin-top: 50px;

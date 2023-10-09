@@ -15,7 +15,6 @@
 </head>
 
 <body>
-  
     <div class="top-header-background">
         <div class="continer">
             <div class="top-header">
@@ -163,7 +162,7 @@
                             <a href="#"> Contact Us</a>
                         </li>
                         <li>
-                            <a href="#"><img class="black-icon" src="./image/search-icon.png" alt="search-icon"> <img
+                            <a href="https://www.google.com"><img class="black-icon" src="./image/search-icon.png" alt="search-icon"> <img
                                     class="white-icon" src="./image/white-icon.png" alt=""></a>
                         </li>
                     </ul>
@@ -1465,7 +1464,16 @@
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
+            responsive: [
 
+{
+    breakpoint: 1024,
+    settings: {
+       
+        arrows: false,
+    }
+},
+]
 
         });
         $('.stuidies-slider').slick({
