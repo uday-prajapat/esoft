@@ -336,10 +336,6 @@ transition: transform .4s, opacity .1s;
     line-height: 30px;
 }
 
-.slider-right-img {
-   
-    
-}
 
 .slider-right-img img {
     display: block;
@@ -392,7 +388,7 @@ border-radius: 5px;
     background: #F9B508;
     padding: 17px 35px;
     display: inline-block;
-    margin-top: 20px;
+    margin: 20px 0 50px;
     color: #000000;
     font-size: 15px;
     transition: 0.5s ease all;
