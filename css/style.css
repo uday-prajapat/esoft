@@ -1741,18 +1741,19 @@ a {
     }
 
 
-    .slider-background {
-        height: auto;
-    }
+    .slider-image {
+        height: 500px;
 
+    }
+   
     .slider-text {
-        padding: 50px 0;
         width: 100%;
     }
 
     .slider-text h1 {
         width: 100%;
         line-height: 43px;
+        font-size: 40px;
     }
 
     .animate .animatiom {
