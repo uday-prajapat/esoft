@@ -24,11 +24,11 @@
 
     position: absolute;
     top: 50%;
-
+background: #F9B508;
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -80,7 +80,6 @@
 .slick-prev
 {
     left: 25px;
-    
     z-index: 1;
 }
 [dir='rtl'] .slick-prev
@@ -119,7 +118,7 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
 
 .slick-dots
@@ -140,13 +139,13 @@
 .slick-dots li
 {
     position: relative;
-    z-index: 1;
+    z-index: 9;
     display: inline-block;
-    border-radius: 15px;
+    border-radius: 10px;
     width: 10px;
     height: 10px;
     margin: 0 5px;
-    background: #ffebb5;
+    background: #f7e1a9;
     padding: 0;
 
     cursor: pointer;
@@ -203,8 +202,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active{
-    background: #ffbb00;
- 
+    background: #F9B508;
 }
 .slick-dots li.slick-active button:before
 {
@@ -213,21 +211,16 @@
 }
 .prev-arrow.slick-arrow {
     position: absolute;
-    left: 30px;
+    left: 0;
     top: 50%;
     z-index: 9;
     transform: translate(0, -50%);
-    }
-    .prev-arrow.slick-arrow img{
-        width: 25px;
     }
 .next-arrow.slick-arrow {
     position: absolute;
-    right: 30px;
+    right: 0;
     top: 50%;
     z-index: 9;
     transform: translate(0, -50%);
     }
-    .next-arrow.slick-arrow img{
-        width: 25px;
-    }
+
